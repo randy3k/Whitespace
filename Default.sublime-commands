@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Whitespace: Remove Trailing Whitespace",
+        "command": "remove_trailing_whitespace"
+    }
+]

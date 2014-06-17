@@ -47,5 +47,5 @@ class RemoveTrailingWhitespace(sublime_plugin.TextCommand):
 class WhitespaceEventListener(sublime_plugin.EventListener):
     def on_pre_save(self, view):
         if view.is_scratch() or view.settings().get('is_widget'): return
-        if view.settings().get("remove_trailing_whitespace", False):
+        if view.settings().get("remove_trailing_whitespace_on_save", False):
             view.run_command("remove_trailing_whitespace")
