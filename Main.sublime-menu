@@ -1,0 +1,40 @@
+[
+  {
+    "id": "edit",
+    "children": [
+      {
+        "caption": "-",
+        "id": "whitespace"
+      },
+      {
+        "children": [
+          {
+            "command": "toggle_setting",
+            "args": {"setting": "remove_trailing_whitespace"},
+            "caption": "Remove Trailing Whitespace",
+            "checkbox": true
+          },
+          {
+            "command": "toggle_setting",
+            "args": {"setting": "ensure_single_trailing_newline"},
+            "caption": "Ensure Single Trailing Newline",
+            "checkbox": true
+          },
+          {
+            "command": "toggle_setting",
+            "args": {"setting": "ignore_whitespace_only_lines"},
+            "caption": "Ignore Whitespace only Lines",
+            "checkbox": true
+          },
+          {
+            "command": "toggle_setting",
+            "args": {"setting": "ignore_whitespace_on_current_line"},
+            "caption": "Ignore Whitespace on Current Line",
+            "checkbox": true
+          }
+        ],
+        "caption": "Whitespace"
+      }
+    ]
+  }
+]
