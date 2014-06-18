@@ -32,6 +32,12 @@ class RemoveTrailingWhitespace(sublime_plugin.TextCommand):
         lastrow = view.rowcol(view.size())[0]
         if not self.is_empty(lastrow):
             view.insert(edit, view.size(), "\n")
+            # move cursor back when the cursor is at the end
+            for s in [s for s in view.sel()]:
+                if s.empty() and s.b is view.size():
+                    view.sel().add(sublime.Region(view.size()-1,view.size()-1))
+                    view.sel().subtract(s)
+
             lastrow = lastrow + 1
         row = lastrow
         while row>=1:
