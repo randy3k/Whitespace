@@ -10,6 +10,15 @@
         "children": [
           {
             "command": "toggle_setting",
+            "args": {"setting": "remove_trailing_whitespace"},
+            "caption": "Remove Trailing Whitespace",
+            "checkbox": true
+          },
+          {
+            "caption": "-",
+          },
+          {
+            "command": "toggle_setting",
             "args": {"setting": "remove_trailing_whitespace_on_save"},
             "caption": "Remove Trailing Whitespace on Save",
             "checkbox": true
