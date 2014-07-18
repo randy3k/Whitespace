@@ -9,10 +9,8 @@
       {
         "children": [
           {
-            "command": "toggle_setting",
-            "args": {"setting": "remove_trailing_whitespace"},
-            "caption": "Remove Trailing Whitespace",
-            "checkbox": true
+            "command": "remove_trailing_whitespace",
+            "caption": "Remove Trailing Whitespace"
           },
           {
             "caption": "-"
