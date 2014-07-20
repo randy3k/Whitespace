@@ -18,7 +18,8 @@ These plugin can be installed via package control.
 
 - To activate "remove trailing whitespace on save", click the menu items in `Edit -> Whitespace`.
 
-- To enable Whitespace at startup, modify your preference setting file:
+- To enable Whitespace at startup, modify your preference setting file. If you want to enable Whitespace for a specific syntax, 
+edit `Preferences -> Settings - More -> Syntax Specific`:
 
 ```
 {
