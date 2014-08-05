@@ -10,10 +10,10 @@ Whitespace helps in keeping your code clean by providing more features in removi
 - ignore whitespace on current line
 
 
-# Installation
+### Installation
 These plugin can be installed via package control.
 
-# Options
+### Options
 - The easiest way to apply "remove trailing whitespace" is by Command Palette `C+Shift+P`. 
 
 - To activate "remove trailing whitespace on save", click the menu items in `Edit -> Whitespace`.
