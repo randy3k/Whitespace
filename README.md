@@ -11,7 +11,7 @@ Whitespace helps in keeping your code clean by providing more features in removi
 
 
 ### Installation
-These plugin can be installed via package control.
+This plugin can be installed via package control.
 
 ### Options
 - The easiest way to apply "remove trailing whitespace" is by Command Palette `C+Shift+P`. 
