@@ -1,4 +1,5 @@
-import sublime, sublime_plugin
+import sublime
+import sublime_plugin
 import re
 
 
@@ -35,23 +36,25 @@ class RemoveTrailingWhitespace(sublime_plugin.TextCommand):
             # move cursor back when the cursor is at the end
             for s in [s for s in view.sel()]:
                 if s.empty() and s.b is view.size():
-                    view.sel().add(sublime.Region(view.size()-1,view.size()-1))
+                    view.sel().add(sublime.Region(view.size()-1, view.size()-1))
                     view.sel().subtract(s)
 
             lastrow = lastrow + 1
         row = lastrow
-        while row>=1:
+        while row >= 1:
             if self.is_empty(row-1):
                 R = view.line(view.text_point(row, 0))
                 a = R.a
                 b = R.b
-                view.erase(edit, sublime.Region(a-1,b))
+                view.erase(edit, sublime.Region(a-1, b))
                 row = row-1
             else:
                 break
 
+
 class WhitespaceEventListener(sublime_plugin.EventListener):
     def on_pre_save(self, view):
-        if view.is_scratch() or view.settings().get('is_widget'): return
+        if view.is_scratch() or view.settings().get('is_widget'):
+            return
         if view.settings().get("remove_trailing_whitespace_on_save", False):
             view.run_command("remove_trailing_whitespace")
