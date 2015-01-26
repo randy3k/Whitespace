@@ -30,4 +30,4 @@ edit `Preferences -> Settings - More -> Syntax Specific`:
 }
 ```
 
-The optoins explain themselves. Their default values are `false`. You can also make use of [Syntax Manager](https://github.com/randy3k/SyntaxMgr) to enable Whitespace for multiple syntaxes.
+The options explain themselves. Their default values are `false`. You can also make use of [Syntax Manager](https://github.com/randy3k/SyntaxMgr) to enable Whitespace for multiple syntaxes.
