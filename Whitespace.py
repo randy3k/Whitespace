@@ -12,7 +12,7 @@ class RemoveTrailingWhitespace(sublime_plugin.TextCommand):
 
     def trim_whitespace(self, edit):
         view = self.view
-        pat = r"( |\t)+$"
+        pat = r"[ \t\f]+$"
         if view.settings().get("ignore_whitespace_only_lines", False):
             pat = r"(?<=\S)" + pat
         regions = view.find_all(pat)
